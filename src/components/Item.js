@@ -2,7 +2,7 @@ import React from "react";
 
 function Item({ item, onUpdateItem, onDeleteItem }) {
   function handleDeleteClick() {
-    fetch(`http://localhost:4000/iems/${item.id}`, {
+    fetch(`http://localhost:4000/items/${item.id}`, {
       method: 'DELETE',
     })
     .then((r)=> r.json())
